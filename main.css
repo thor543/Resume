@@ -127,7 +127,7 @@ img {
 
 /* footer */
 footer {
-    background-color: rgb(152, 207, 243);
+    /* background-color: rgb(152, 207, 243); */
     height: 87px;
     display: flex;
     align-items: center;
@@ -135,6 +135,7 @@ footer {
     width: 100%;
     bottom: 0;
     position: absolute;
+    background-image: url("http://v.bootstrapmb.com/2019/12/hsgo66944");
 }
 
 
