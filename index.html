@@ -1,397 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-<!-- <script language="JavaScript" src="main.js"></script> -->
-<link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
+    <link rel="stylesheet" href="main.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
-
-</head>
-<body>
+  </head>
+  <body>
     
+
     
-
-
-<div class="wrap">
-    <header class="container">
-        <div id="iframe-wrap">
-
-             <canvas id="canvas"  width="1200px" height="322"></canvas>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="cube_wrap">
-    <div class="cube">
-      <div class="rotation">
-        <div class="wall front"></div>
-        <div class="wall back"></div>
-        <div class="wall left"></div>
-        <div class="wall right"></div>
-        <div class="wall top"></div>
-        <div class="wall bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-
-            <!-- <iframe id="iframe" src="http://v.bootstrapmb.com/2019/12/hsgo66944" frameborder="0"  width="100%"   height="auto">
-            </iframe> -->
-           
-        <ul class="item">
-            <li>
-            <img src="01.jpg" width="200px" >
-            </li>
-                <!-- <li>
-                    <h1>Thor</h1>
-                </li>
-                    <li>網頁設計師</li> -->
-                </div> 
-        </ul>
-
-                
-                <ul class="designMore">
-
-
-                    <li>
-                        <h1>吳建達 Thor</h1>
-                        <p>努力轉職中的小小網頁工程師</p>
-                    <li>
-                       
-                        <a href="https://www.google.com.tw/maps/place/%E5%8F%B0%E4%B8%AD%E5%B8%82/@24.2203302,120.3953807,9z/data=!3m1!4b1!4m5!3m4!1s0x346917dff97922ef:0x87523ee47ea6447f!8m2!3d24.1477358!4d120.6736482?hl=zh-TW" target="_black"><i class="fas
-                        fa-map-marker"> </i> 台中市  西屯
-                       
-                    </a>
-                    </li>
-
-                    <li>
-                        <a href="https://github.com/thor543" target="_black">
-                            <i class="fab fa-github"></i>thor543
-                        </a>
-                        
-                       
-                    </li>
-
-                    <li>
-                        <a href="mailto:orange850725@gmail.com" target="_black">
-                             <i class="far fa-envelope"></i>orange850725@gmail.com
-                        </a>
-
-                       
-                    </li>
-                    
-                    <li>
-
-                     <a href="mailto:orange850725@gmail.com" target="_black">
-                             <i class="fas fa-phone "></i>0909840725
-                        </a>
-                    
-                    </li>
-                </ul>
-                
-    </header>
-
+<div class="jumbotron">
   
-   
-    
-  
-    
+<div class="clearfix ">
+  <img src="01.jpg"  width="300" height="300" class="img-fluid   rounded-circle float-left " alt="Responsive image">
+  <ul class="design">
+
+       <h1 class="text-center mt-4">吳建達</h1>
+       <div class="text-center">努力轉職中的小小網頁工程師</div>
 
 
 
+       <div class="item">
+        <li class="text-left">              
+        <a href="https://www.google.com.tw/maps/place/%E5%8F%B0%E4%B8%AD%E5%B8%82/@24.2203302,120.3953807,9z/data=!3m1!4b1!4m5!3m4!1s0x346917dff97922ef:0x87523ee47ea6447f!8m2!3d24.1477358!4d120.6736482?hl=zh-TW" target="_black"><i class="fas
+                        fa-map-marker"> </i> 台中市  西屯                     
+       </li> 
 
        
+        </a>
+        </li>
+        <li class="text-left">
+            <a href="https://github.com/thor543" target="_black">
+                  <i class="fab fa-github"></i>thor543
+            </a>
+                                              
+        </li>
 
-        <footer>
-                <h3>© 2020 Thor. ALL RIGHTS RESERVED</h3>
-            </footer>
+        <li class="text-left">
+            <a href="mailto:orange850725@gmail.com" target="_black">
+                  <i class="far fa-envelope"></i>orange850725@gmail.com
+            </a>
+
+        <li class="text-left">                
+         <a href="mailto:orange850725@gmail.com" target="_black">
+                 <i class="fas fa-phone "></i>0909840725
+            </a>
+         </li>
+
+</div>
+
+
+
+
+
+
+    </ul>
+</div>
+</div>
+
+
+<div class="container fluid" >
+
+
+
+
+
+    <div class="row   m-2">
+  <div class="card col ">
+    <div class="card-body ">
+      <h5 class="card-title">學歷</h5>
+      
+       <p class="card-text mb-0">2011 國立嘉義高商 資料處理科</p>
+        Data Processing Section
+
+  
+      <p class="card-text mt-3">2014 私立嶺東科大 資訊管理系</p>
+        Department of Information Management
+    </div>
+   </div>
+ </div>
+
+
+<div class="row   m-2">
+  <div class="card col ">
+    <div class="card-body ">
+      <h5 class="card-title">工作經歷</h5>
+      <div class="card-text">2014 八方雲集</div>
+      <div class="card-text">2016 必勝客</div>
+      <div class="card-text">2016 音象網路科技股份有限公司</div>
+      <div class="card-text">2018 巨匠電腦</div>
+      <div class="card-text">2018 美佳數位媒體有限公司</div>
+    </div>
+  
+  </div>
+ 
+</div>
+
+  
+
+<div class="row   m-2">
+  <div class="card col mt-3">
+  
+    <div class="card-body">
+      <h5 class="card-title">程式技能</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+
+
+</div>
+
+</div>
+<div class="row   m-2">
+ <div class="card col mt-3">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
     </div>
 </div>
-    
+
+</div>
+</div>
 
 
-<!-- <script src="main.js"></script> -->
-</body>
+
+
+
+
+
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
