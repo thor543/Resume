@@ -13,24 +13,55 @@ img{
  li {list-style-type:none;}
 
 
+.jumbotron{
+    text-align: center;
+    background-image:linear-gradient(-45deg,#fffaf0,#f8c3c1);
+}
+
  .item{
      margin-top: 50px;
-    margin-left: 40px;
+    margin-left: 10px;
+  
  }
+
+ .item li i{
+     margin-right: 6px;
+ }
+
+ .item li a{
+     font-weight: bold;
+     color: mediumaquamarine;
+ }
+
+
+  .container  h3 {
+    font-size: 12px;
+  text-align: center;
+
+  
+}
+
+.design{
+  
+}
 
 
  @media (max-width: 576px) {
  
-    .clearfix img{
-        margin-left:40px;
+   .design{
+        padding-right: 10px;
+   }
+
+    .clearfix{
+         margin-left:40px;
     }
+
 
     .ul{
-        margin-left:20px;
+        margin-left:10px;
     }
 
-    #w-100{
-        visibility: visible;
-    }
+   
 
  }
+
