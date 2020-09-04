@@ -71,7 +71,7 @@ img{
 
 
 
-.wrap footer h3{
+.wrapsnake footer h3{
     font-size: 20px;
     text-align: center;
     
@@ -203,3 +203,263 @@ h2.title::after{
 
  }
 
+
+
+ /* 切版ＣＳＳ */
+
+   
+        
+        .wrapsnake{
+            width: 100%;
+            margin:auto;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif,sans-serif;
+        }
+
+        .wrapsnake h1{
+           margin-top: 100px;
+            text-align: center;
+            font-size: 50px;
+            width: 900;
+            color: #000;
+            
+        }
+
+        .wrapsnake h2{
+            text-align: center;
+        }
+
+        /* .wrapsnake::after{
+            content: '';
+            display: block;
+            top: 0;
+            clear: both;
+            width: 100%;
+            height: 200px;
+        } */
+
+        .timeline{
+            padding: 100px 0 200px;
+       
+        }
+        .timeline::after{
+        content: '';
+        display: block;
+        height: 0px;
+        width: 100%;
+        clear: both;
+        }
+
+        .timeline li{
+            width: 50%;
+            box-sizing: border-box;
+            padding: 20px 0;
+            position: relative;
+            
+        }
+
+        .timeline li:nth-child(odd){
+            float: left;
+            padding-right: 100px;
+        }
+
+        .timeline li:nth-child(even){
+            float: right;
+            padding-left: 100px;
+            transform: translateY(50%);
+        }
+
+     
+
+        .timeline a{
+            display: block;
+            text-decoration: none;
+            background-color: #fff;
+            border: 5px solid #000;
+            box-sizing: border-box;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 10px 3px 5px #888;
+        }
+
+        .timeline a:hover{
+            background-color: #6fa5f6;
+        }
+
+        .timeline a:hover h2,
+        .timeline a:hover p{
+            color: #fff;
+        }
+
+          /* .timeline li::after{
+           content: '';
+           position: absolute;
+           top: 0;
+           width: 1px;
+           height: 100%;
+           background-color: #ccc;
+        } */
+
+        .timeline li:nth-child(odd)::after{
+            content: '';
+           position: absolute;
+           top: 0;
+           width: 1px;
+           height: 100%;
+           background-color: #000;
+            right: 0;
+            /* z-index: -1; */
+        }
+
+        .timeline li:nth-child::after{
+            height: 50px;
+        }
+
+         .timeline li::before{
+             content: '';
+             position: absolute;
+             width: 20px;
+             height: 20px;
+             border-radius: 20px;
+             background-color: #000;
+             z-index: 2;
+           
+             margin: auto;
+         }
+
+            .timeline li:nth-child(odd)::before{
+            right: -10px;
+        }
+        
+        .timeline li:nth-child(even)::before{
+            left: -10px;   
+        }
+        
+        .timeline h2{
+            color: #333;
+            font-family: 'Noto Sans TC', sans-serif,sans-serif;
+            font-weight: 700;
+        }
+        .timeline p{
+            color: #666;
+            font-family: 'Noto Sans TC', sans-serif,sans-serif;
+            font-weight: 700;
+            
+        }
+
+        .timeline h2::after{
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100px;
+            background-color: #000;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+
+        .timeline li:nth-child(odd) h2::after {
+            right: 0;
+        }
+
+        .timeline li:nth-child(even) h2::after {
+            left: 0;
+        }
+
+
+/* 切版ＣＳＳ */
+
+
+
+
+
+/* 貪食蛇ＣＳＳ */
+
+
+.wrapsnake{
+    
+    width: 420px;
+    margin: auto;
+   
+    display: flex;
+    flex-direction: column;
+    
+   
+    overflow:visible;
+}
+
+.wrapsnake input{
+    border-radius: 50%;
+    border: 5px solid #000;
+    background-color: #fff;
+    font-weight: bold;
+}
+.wrapsnake input:hover{
+    background-color: #6fa5f6;
+}
+
+.wrapsnake .container{
+        display: flex;
+        flex-direction: row;
+        /* margin: 10px; */
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+
+.wrapsnake .item{
+    display: flex;
+   
+    justify-content: center;
+    flex-direction: column;
+    
+    padding-bottom: 20px;
+    
+}
+/* .wrapsnake .key,
+.wrapsnake .item{
+    margin: 10px;
+} */
+
+
+.wrapsnake .key{
+    display: flex;
+    margin:  auto;
+    
+}
+
+.wrapsnake .key .left{
+   margin-right: 20px  ;
+    
+}
+.wrapsnake .key .right{
+   margin-left: 20px  ;
+    
+}
+
+.wrapsnake .run{
+    color: turquoise;
+    height: 200px;
+    font-size: 30px;
+    
+    
+}
+/* .wrapsnake .run img{
+    
+    border-radius: 50%;
+    padding: 50px;
+} */
+
+@media screen and (max-width: 600px){
+    .wrapsnake{
+       width: 100%;
+       
+    }
+
+    
+
+}
+
+/* 貪食蛇ＣＳＳ */
