@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style type="text/css">
+@import url(https://use.fontawesome.com/releases/v5.1.1/css/all.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700;900&display=swap);
+
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            
+        }
+
+
+        html,body{
+            height: 100%;
+            
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: url("https://picsum.photos/1024/1024/?random=1"
+            ) no-repeat center center / cover ; */
+          background: url("logo.jpg"
+            ) no-repeat center center / cover ;
+        }
+
+        .form{
+            font-family: 'Noto Sans TC', sans-serif,sans-serif;
+            width: 400px;
+            color: #fff;
+        }
+
+        .login{
+            width: 600px;
+            height: 500px;
+            background-color: rgba(0, 0, 0, .6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            border: 10px solid #fff;
+            box-shadow: 0 0 60px #000;
+            backdrop-filter: blur(3px);
+            
+        }
+
+        .form h2{
+            text-align: center; 
+            margin-bottom: 20px;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 20px;
+        }
+
+        .form group{
+            margin-bottom: 20px;
+        }
+
+        .form label{
+          line-height: 2;
+        }
+
+        .form input{
+          width: 100%;
+          border: 1px solid #aaa;
+          line-height: 3;
+          border-radius: 5px;
+        }
+
+        .form .btn-group{
+            font-size: 0;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .form .btn{ 
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #6ab4fe;
+            width: 190px;
+            padding: 10px 0;
+            color: #fff;
+            font-family: 'Noto Sans TC', sans-serif,sans-serif;
+
+        }
+
+        /* .form .btn +.btn{
+            margin-left: 20px;
+        } */
+
+
+        </style>
+</head>
+<body>
+    
+    <div class="login">
+        <div class="form">
+            <h2>會員登入</h2>
+            <div class="group">
+               
+                <label for="">帳號</label>
+                <input  type="text" name="" id="user_id">
+            </div>
+             <div class="group">
+                <label for="">密碼</label>
+                <input  type="password" name="" id="psw_id">
+        </div>
+            <div class="btn-group">
+                <button class="btn">登入</button>
+                <button class="btn">取消</button>
+            </div>
+    </div>
+
+
+
+</body>
+</html>

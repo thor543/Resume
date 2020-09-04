@@ -142,6 +142,10 @@ h2.title::after{
 
 
 
+.container h1{
+    color: 000;
+}
+
 
 /* icons */
 .footer-content .contact-link{
@@ -155,6 +159,9 @@ h2.title::after{
     color: rgb(56, 56, 56);
 }
 
+.section  h1{
+    color: 000;
+}
 
 
 
@@ -162,6 +169,11 @@ h2.title::after{
 @media (max-width: 992px) {
     .about-text{
         margin-left: 30px;
+    }
+
+
+    .collapseThree iframe{
+        height: ;
     }
 
 }
@@ -209,14 +221,14 @@ h2.title::after{
 
    
         
-        .wrapsnake{
+        .wrap{
             width: 100%;
             margin:auto;
             list-style: none;
             font-family: 'Noto Sans TC', sans-serif,sans-serif;
         }
 
-        .wrapsnake h1{
+        .wrap h1{
            margin-top: 100px;
             text-align: center;
             font-size: 50px;
@@ -225,7 +237,7 @@ h2.title::after{
             
         }
 
-        .wrapsnake h2{
+        .wraps h2{
             text-align: center;
         }
 
@@ -239,7 +251,7 @@ h2.title::after{
         } */
 
         .timeline{
-            padding: 100px 0 200px;
+            padding: 50px 0 200px;
        
         }
         .timeline::after{
@@ -388,6 +400,10 @@ h2.title::after{
     
    
     overflow:visible;
+}
+
+.wrapsnake h1{
+    text-align: center;
 }
 
 .wrapsnake input{

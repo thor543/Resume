@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG ＪＳ建立繪圖</title>
+<script>
+
+var svg ;
+window.onload = function(){
+    svg = document.getElementById("svg")
+
+    //產生<line></line> 標籤
+    var line = document.createElementNS("http://www.w3.org/2000/svg","line")
+
+    line.setAttribute("x1",50) 
+    line.setAttribute("y1",50)
+    line.setAttribute("x2",350)
+    line.setAttribute("y2",350)
+
+    line.setAttribute("stroke","red")
+    line.setAttribute("stroke-width","2")
+
+    svg.appendChild(line)
+
+
+
+}
+
+
+
+
+
+</script>
+
+</head>
+<body>
+    <svg id = "svg" width="640" height="480" style="border: 1px solid #000000 ;">
+
+
+
+
+
+
+
+    </svg>
+
+
+
+</body>
+</html> 

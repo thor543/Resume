@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,maximum-scale=1"
+    />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700;900&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+html,body{
+    
+    align-items: center;
+    background-color: #003;
+}
+
+
+    
+
+
+.wrap{
+
+    width: 1200px; 
+  
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.item{
+    width: 380px;
+   
+    margin-top: 60px;
+    text-align: center;
+   display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transform: translateY(0px);
+    transition: .5s;
+}
+
+
+.item img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.item h2{
+    border-bottom: 1px solid#000000;;
+    padding-bottom: .3em;
+    margin-bottom: .4em;
+    font-weight: 700;
+    transition: .25s;
+}
+
+.item p {
+    line-height: 1.6;
+    font-weight: 900;
+    transition: .25s;
+}
+
+.item .txt{
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    position: relative;
+}
+.item .txt:before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    border-top:50px solid transparent;/*透明*/
+    border-left: 190px solid#fff;
+    border-right:190px solid #fff;
+    transform: translateY(-100%);
+    
+}
+
+
+.item:hover{
+    transform: translateY(-50px);
+   
+}
+.item:hover .txt{
+    background-image: linear-gradient(0deg,#FB8076,#FEB85D);
+}
+
+.item:hover  .txt:before{
+
+    border-left: 190px solid#FEB85D;
+    border-right:190px solid #FEB85D;
+
+}
+
+.item:hover h2{
+    color: #fff;
+}
+
+.item:hover p{
+    color: #fff;
+}
+
+
+ @media screen and (max-width:800px) {
+      
+        .wrap {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+
+</style>
+
+
+
+</head>
+<body style="margin: 0px;">
+    
+
+<div class="wrap">
+    <div class="item">
+        <img src="https://picsum.photos/150/150/?random=1">
+        <div class="txt">
+            <h2>魯夫</h2>
+            <p>渭城朝雨浥輕塵，客舍青青柳色新。勸君更盡一杯酒，西出陽關無故人。</p>
+        </div>
+    </div>
+
+ <div class="item">
+        <img src="https://picsum.photos/150/150/?random=2">
+        <div class="txt">
+            <h2>索隆</h2>
+            <p>黃河遠上白雲間，一片孤城萬仞山。羌笛何須怨楊柳，春風不度玉門關。</p>
+        </div>
+    </div>
+
+ <div class="item">
+        <img src="https://picsum.photos/150/150/?random=3">
+        <div class="txt">
+            <h2>香吉士</h2>
+            <p>黃河遠上白云間，一片孤城萬仞山。羌笛何須怨楊柳？春風不度玉門關。</p>
+        </div>
+    </div>
+
+     <div class="item">
+        <img src="https://picsum.photos/150/150/?random=4">
+        <div class="txt">
+            <h2>香吉士</h2>
+            <p>黃河遠上白云間，一片孤城萬仞山。羌笛何須怨楊柳？春風不度玉門關。</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>

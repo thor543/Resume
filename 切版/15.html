@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+@import url(https://use.fontawesome.com/releases/v5.1.1/css/all.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700;900&display=swap);
+
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            
+        }
+
+
+        html,body{
+            height: 100%;
+        }
+
+        body{
+            display: flex;
+            align-items:center;
+            background-image:linear-gradient(-45deg,#fffaf0,#f8c3c1);
+        }
+
+        .list{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .list li{
+            font-family: 'Noto Sans TC', sans-serif,sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            /* background-color: #fff; */
+            background-image: linear-gradient(9deg,#185a9d,#43cea2);
+            border-radius: 50%;
+            position: relative;
+            font-size: 30px;
+            color: #fff;
+            box-shadow: 0px 0px 0px 4px;
+        }
+
+        .list li +li{
+            margin-left: 100px;
+        }
+
+        .list li +li::before{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 5px;
+            z-index: -1;
+            /* background-color: #fff; */
+            background-image: linear-gradient(9deg,#185a9d,#43cea2);
+            box-shadow: 0px 0px 0px 3px #fff;
+            top: 0;
+            bottom: 0;
+            left: -100px;
+            margin: auto;
+
+        }
+
+        .list li.active ~ li{
+            background-image: linear-gradient(9deg,#999,#ccc);
+        }
+
+        .list li.active ~ li::before{
+            background-image: linear-gradient(9deg,#999,#ccc);
+        }
+
+        .list li .fab{
+            font-size: 50px;
+            margin-bottom: 6px;
+        }
+
+</style>
+
+</head>
+<body>
+
+    <ol class="list">
+        <li>
+            <i class="fab fa-cc-apple-pay    "></i>
+            收到訂單
+        </li>
+        <li class="active">
+            <i class="fab fa-cc-apple-pay    "></i>
+            處理中
+        </li>
+        <li>
+            <i class="fab fa-cc-apple-pay    "></i>
+            出貨中
+        </li>
+        <li>
+            <i class="fab fa-cc-apple-pay    "></i>
+            已送達
+        </li>
+    </ol/>
+</body>
+</html>

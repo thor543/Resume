@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+
+    <script type="text/javascript">
+    
+    var cvs,ctx
+
+    window.onload= function(){
+         cvs = document.getElementById("cvs")
+         ctx = cvs.getContext("2d"); //Canvas Context Object
+
+
+        /*
+        //Fill 填滿
+        ctx.fillStyle = "red";
+        ctx.globalAlpha = 0.5;//半透明
+        ctx.fillRect(50,50,100,100);
+
+        //Stroke 描邊
+        ctx.globalAlpha = 1
+        ctx.strokeStyle = "blue"
+        ctx.strokeRect(200,200,50,50)
+
+        //Path 路徑
+        ctx.beginPath()
+        ctx.moveTo(100,100)//移動當前所在的位置
+        ctx.lineTo(200,300)
+        ctx.closePath()
+        ctx.stroke() //ctx.fill() 填滿
+
+        //利用路徑畫出多邊形
+        ctx.beginPath()
+        ctx.moveTo(300,300)
+        ctx.lineTo(400,350)
+        ctx.lineTo(250,400)
+        ctx.closePath()
+        ctx.fill()
+        */
+
+        var img = new Image()
+        img.src = "01.jpg"
+
+        img.onload= function(){
+            ctx.drawImage(this,0,0,cvs.width,cvs.height)
+
+
+        }
+    }
+    
+    function invertColor(){
+        var pixels = ctx.getImageData(0,0,cvs.width,cvs.height) //imageData物件
+        var data = pixels.data //一個像素佔據四個資料(bytes)。r,g,b,a (範圍0~255)
+        for(var i=0;i<data.length;i+=4){
+            data[i]=255-data[i]   //紅
+            data[i+1]=255-data[i+1]   //綠
+            data[i+2]=255-data[i+2]   //藍
+
+    }
+    ctx.putImageData(pixels,0,0)
+}
+
+    
+    </script>
+</head>
+<body>
+    <div><button onclick="invertColor();">顏色的反轉</button></div>
+    <canvas id = "cvs" width="800" height="600" style="border: 1px solid #000000" ></canvas>
+    
+</body>
+</html>

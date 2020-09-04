@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700;900&display=swap);
+
+  *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 'Noto Sans TC', sans-serif,sans-serif;
+    }
+
+    .main-footer{
+        background:linear-gradient(180deg,blue,red) ;
+    }
+    .main-footer .container{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        max-width:  1400px;
+        margin: auto;
+        align-items: center;
+        height: 100px;
+    }
+    .main-footer .logo{
+        width: 100px;
+        position: absolute;
+    }
+    .main-footer .logo img{
+        width: 100px;
+        vertical-align: middle;
+    }
+
+    .main-footer .main-nav{
+        display: flex;
+       
+    }
+
+    /* .main-footer .main-nav:first-of-type{
+        order: -1;
+    } */
+
+    .main-footer .main-nav a:nth-child(3){
+        margin-left: 140px;
+    }
+
+
+
+    .main-footer .main-nav a{
+        text-decoration: none;/*取消連結底線*/
+        color:#fff;
+        padding: 5px 1em;
+        position: relative;
+        transform: translateY(0px);
+        transition: .3s;
+    }
+
+    .main-footer .main-nav a:hover{
+        transform: translateY(-20px);
+    }
+
+    .main-footer .main-nav a:after{   
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -5px;
+        height: 0;
+        border-bottom: 1px solid #fff;
+        transition: .3s;
+    }
+
+    .main-footer .main-nav a:hover:after{
+        left: 0;
+        right: 0;
+    }
+
+
+    .main-footer .header-search{
+        display: flex;
+    }
+
+   
+
+
+
+ .main-footer .container img {  /*將圖片製作圓邊 */
+	width: 100px;
+	border-radius: 50%;
+	border: 1px solid rgba(255,0,0,1.00);
+}
+
+
+
+
+</style>
+</head>
+<body>
+      <div class="main-footer">
+        <div class="container">
+            <a href="#" class="logo">
+            <img  src="logo.jpg" alt="" class="">
+            </a>
+            <nav class="main-nav">
+                <a href="#" >海陸大亨</a>
+                <a href="#" >夏威夷</a>
+                <a href="#" >章魚燒</a>
+                <a href="#" >泡菜燒肉</a>
+            </nav>
+          
+    </div>
+
+</body>
+</html>
