@@ -16,13 +16,16 @@ body {
 }
 .about-text h3{
     text-align: left;
+    font-size: 30px;
 }
 
 .about-text{
     padding-top: 20px;
-
 }
 
+.about-text p{
+    font-size: 18px;
+}
 
 
 
@@ -30,9 +33,11 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+ 
 img{
     border-radius: 50%;
+    border: 3px solid #000; 
+    border-style: inset !important;
 }
 
 .clearfix ul{
@@ -76,6 +81,16 @@ img{
 .porg {
     line-height: 20px;
 }
+/* words */
+
+.tab-header {
+    display: flex;
+}
+
+
+
+
+
 
 
 /* footer */
