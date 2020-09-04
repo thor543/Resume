@@ -1,3 +1,36 @@
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+
+}
+.about-pic{
+    display: flex;
+    justify-content: center;
+}
+.about-text h3{
+    text-align: left;
+}
+
+.about-text{
+    padding-top: 20px;
+
+}
+
+
+
+
+.title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 img{
     border-radius: 50%;
 }
@@ -13,10 +46,7 @@ img{
  li {list-style-type:none;}
 
 
-.jumbotron{
-    text-align: center;
-    background-image:linear-gradient(-45deg,#fffaf0,#f8c3c1);
-}
+
 
  .item{
      margin-top: 50px;
@@ -34,31 +64,124 @@ img{
  }
 
 
-  .container  h3 {
-    font-size: 12px;
-  text-align: center;
 
-  
+
+.wrap footer h3{
+    font-size: 20px;
+    text-align: center;
+    
+
 }
 
-.design{
-  
+.porg {
+    line-height: 20px;
 }
 
+
+/* footer */
+
+#contact {
+    background-color: rgb(248, 248, 248);
+    padding: 40px 0px;
+}
+
+h2 {
+    
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+    letter-spacing: 1px;
+ 
+}
+
+h2.title{
+    width: 100%;
+    text-align: center;
+}
+
+h2.title::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(56, 56, 56);
+    margin: 5px auto 5px;
+    
+}
+
+.contact-logo a{
+    color: rgb(56, 56, 56);
+}
+
+.contact-info li a{
+    color: rgb(56, 56, 56);
+}
+
+.footer-content .contact-logo {
+    text-align: center;
+}
+
+.contact-info li a{
+    margin: 10px 0;
+}
+
+
+
+
+/* icons */
+.footer-content .contact-link{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-link  li i{
+    margin:3px 7px;
+    color: rgb(56, 56, 56);
+}
+
+
+
+
+/*手機尺寸 */
+@media (max-width: 992px) {
+    .about-text{
+        margin-left: 30px;
+    }
+
+}
+@media (max-width: 768px) {
+
+.about-text{
+    margin-left: 0px;
+    
+    }
+}
 
  @media (max-width: 576px) {
  
-   .design{
-        padding-right: 10px;
+  #contact .title {
+    display: none;
+
+  
+}
+
+ #h2 .title {
+    display: none;
+ }
+
+   .design h1{
+       margin-left: 5px;
    }
 
-    .clearfix{
-         margin-left:40px;
-    }
+    
+.clearfix img{
+    margin-left: 40px;
+  
+}
 
-
-    .ul{
-        margin-left:10px;
+    .clearfix ul{
+        margin-left:30px;
     }
 
    
