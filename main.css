@@ -198,10 +198,6 @@ h2.title::after{
 
 
 
-.collapseThree iframe{
-        
-        width: 300px;
-    }
 
 
   #contact .title {
@@ -268,7 +264,7 @@ h2.title::after{
         } */
 
         .timeline{
-            padding: 50px 0 200px;
+            padding: 0 0 10px;
        
         }
         .timeline::after{
