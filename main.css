@@ -173,7 +173,7 @@ h2.title::after{
 
 
     .collapseThree iframe{
-        height: ;
+        height: 800;
     }
 
 }
@@ -183,10 +183,19 @@ h2.title::after{
     margin-left: 0px;
     
     }
+    .collapseThree iframe{
+        height: 600;
+    }
 }
 
  @media (max-width: 576px) {
  
+
+.collapseThree iframe{
+        height: 400;
+    }
+
+
   #contact .title {
     display: none;
 
