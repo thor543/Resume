@@ -194,15 +194,12 @@ h2.title::after{
 
  @media (max-width: 576px) {
  
-.container {
-    padding-left: unset!important;
-}
 
 
 
 
 .collapseThree iframe{
-        height: 400px;
+        
         width: 300px;
     }
 
