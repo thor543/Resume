@@ -12,7 +12,7 @@ body {
 }
 .about-pic{
     display: flex;
-
+    justify-content: center;
    
 }
 .about-text h3{
