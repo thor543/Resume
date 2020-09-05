@@ -173,7 +173,8 @@ h2.title::after{
 
 
     .collapseThree iframe{
-        height: 800;
+        height: 800px;
+        width: 600px;
     }
 
 }
@@ -184,7 +185,8 @@ h2.title::after{
     
     }
     .collapseThree iframe{
-        height: 600;
+        height: 600px;
+        width: 400px;
     }
 }
 
@@ -192,7 +194,8 @@ h2.title::after{
  
 
 .collapseThree iframe{
-        height: 400;
+        height: 400px;
+        width: 300px;
     }
 
 
