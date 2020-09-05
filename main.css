@@ -12,7 +12,8 @@ body {
 }
 .about-pic{
     display: flex;
-    justify-content: center;
+
+   
 }
 .about-text h3{
     text-align: left;
@@ -35,7 +36,7 @@ body {
 }
  
 img{
-    border-radius: 50%;
+    
     border: 3px solid #000; 
     border-style: inset !important;
 }
@@ -167,35 +168,60 @@ h2.title::after{
 
 
 
+img{
+    
+     width: 300px ;
+    height:300px;
+}
+
+
+
+
 /*手機尺寸 */
 @media (max-width: 992px) {
     .about-text{
         margin-left: 30px;
     }
 
-
-    .collapseThree iframe{
-        height: 800px;
-        width: 600px;
-    }
+  img{
+    
+    width: 250px ;
+    height:300px;
+}
+.about-pic{
+   padding-top: 70px;
+   margin-right:  20px;
+}
+  
 
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
 .about-text{
     margin-left: 0px;
     
     }
-    .collapseThree iframe{
-        height: 600px;
-        width: 400px;
-    }
+
+
+
+
+    img{
+    
+    width: 230px ;
+    height:250px;
+}
+
+   
 }
 
  @media (max-width: 576px) {
  
 
-
+img{
+    border-radius: 50%;
+    width: 300px ;
+    height:300px;
+}
 
 
 
