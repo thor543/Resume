@@ -40,6 +40,8 @@ img{
     border-style: inset !important;
 }
 
+
+
 .clearfix ul{
     display: flex;
     flex-direction: column;
@@ -192,6 +194,12 @@ h2.title::after{
 
  @media (max-width: 576px) {
  
+.container {
+    padding-left: unset!important;
+}
+
+
+
 
 .collapseThree iframe{
         height: 400px;
