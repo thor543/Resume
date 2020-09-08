@@ -35,9 +35,9 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
 						
-						<div class="about-pic ">
+					<div class="about-pic">
 							  <img src="01.jpg"    alt="Responsive image">
-						</div>
+					</div>
 					</div>
 
 					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-12">
@@ -94,14 +94,14 @@
           <div class="card m-4">
             <div class="card-body">
                   <h5 class="card-title">工作經驗</h5>
-                  <p class="card-text mb-0">基本電腦軟硬體組裝、維修及故障排除。</p>
-                  <p class="card-text mb-0 ">負責公司開發之系統測試及維運工作。</p>
-                  <p class="card-text mb-0">產品監控，突發狀況處理與回報追蹤。</p>
-                  <p class="card-text mb-0">撰寫程式碼製作遊戲專題。</p>
-                  <p class="card-text mb-0">各事項作業的SOP文件撰寫。</p>
-                  <p class="card-text mb-0">善於與客戶溝通，協助工程上的開發。</p>
-                  <p class="card-text mb-0">串接API協助後端。</p>
-                  <p class="card-text mb-0">DB資料庫、posman操作。</p>
+                  <p class="card-text mb-2"><mark>基本電腦軟硬體組裝、維修及故障排除。</mark></p>
+                  <p class="card-text mb-2 "><mark>負責公司開發之系統測試及維運工作。</mark></p>
+                  <p class="card-text mb-2"><mark>產品監控，突發狀況處理與回報追蹤。</mark></p>
+                  <p class="card-text mb-2"><mark>撰寫程式碼製作遊戲專題。</mark></p>
+                  <p class="card-text mb-2"><mark>各事項作業的SOP文件撰寫。</mark></p>
+                  <p class="card-text mb-2"><mark>善於與客戶溝通，協助工程上的開發。</mark></p>
+                  <p class="card-text mb-2"><mark>串接API協助後端。</mark></p>
+                  <p class="card-text mb-2"><mark>DB資料庫、posman操作。</mark></p>
 
                 </div>
             </div>
@@ -394,10 +394,35 @@
 
 	<!--//footer-->
 
+<!-- 動態畫線 -->
+<script>
+      let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animation");
+            observer.unobserve(entry.target); //監聽執行一次就移除
+          }
+        });
+      });
 
-  <script type="text/javascript">
+      document.querySelectorAll("mark").forEach((mark) => {
+        observer.observe(mark);
+      });
+
+
+
+
+
+
+    </script>
+
+
+
   
-  </script>
+
+
+
+
 
 
 
